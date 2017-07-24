@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index Page</title>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <!-- <script src="bankSelf.js"></script> -->
+        <script>
+            System.config({packages: {"": {} }});
+            System.import("bankIndependent").catch(function(err){ console.log(err); });
+        </script>
+
+    </head>
+    <body>
+        <h3>Index Page</h3>
+    </body>
+</html>
